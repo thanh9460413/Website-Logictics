@@ -23,7 +23,7 @@
             box-sizing: border-box;
 
             .text-10 {
-                margin-bottom: 8px;
+                margin-bottom: 20px;
                 display: flex;
                 flex-direction: column;
                 width: fit-content;
@@ -167,7 +167,7 @@
             margin: 42px 0 6px 0;
             display: flex;
             flex-direction: column;
-            width: 70%;
+            width: 65%;
             box-sizing: border-box;
 
             .container-20 {
@@ -184,14 +184,18 @@
                     width: 50%;
                     border-radius: 3px;
                     font-size: 14px;
+                    
                     font-family: 'Krub';
                     font-weight: 400;
-                    margin-left: 20px;
+                    
                     border: 1px solid #4A99D3; // Sử dụng border thay vì border-color
                     box-sizing: border-box; // Đảm bảo chiều rộng và chiều cao tính cả phần border
                 
                     &::placeholder {
                         color: #FFFFFF;
+                    }
+                    &:nth-child(1){
+                        margin-right: 10px;
                     }
                 }                
             }
@@ -199,16 +203,15 @@
                 .textarea {
                     position: relative;
                     background-color: #091242;
-                    margin-right: 28px;
                     font-family: 'Krub';
                     color: #FFFFFF;
                     padding: 30px;
-                    width: 98%;
-                    margin-left: 20px;
+                    width: 100%;
                     border-radius: 3px;
                     font-size: 14px;
                     margin-bottom: 31px;
                     font-weight: 400;
+
                     border: 1px solid #4A99D3;
                     box-sizing: border-box;
                     min-height: 120px; // Đảm bảo độ cao tối thiểu
@@ -226,7 +229,6 @@
                     padding: 19px 0.6px 19px 0;
                     width: 94px;
                     box-sizing: border-box;
-                    margin-left: 20px;
                     
                     color: #FFFFFF;
                     &:hover{
@@ -389,12 +391,6 @@
                     box-sizing: border-box;
                     align-items: center;
                     justify-content: center;
-                    .star{
-                        position: relative;
-                        margin-right: 8.8px;
-                        width: 51.6px;
-                        height: 51.6px;
-                    }
                     .studio-green{
                         position: relative;
                         margin-bottom: 3.5px;
@@ -417,6 +413,16 @@
                     }
                 }
             }
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        .client-logo{
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .client-logo{
+            display: none;
         }
     }
 }

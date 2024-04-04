@@ -89,7 +89,7 @@
                         width: fit-content;
                         box-sizing: border-box;
 
-                        .chng-ti-cung-cp-gii-php-hu-cn-ton-cuy {
+                        .text_title {
 
                             display: inline-block;
                             overflow-wrap: break-word;
@@ -99,7 +99,7 @@
                             color: #1C1F35;
                         }
 
-                        .tn-dng-cc-khun-kh-linh-hot-cung-cp-bn-tm-tt-mnh-mcho-chin-lc-thcy-tduy-hp-tc-nhm-nng-cao-xut-gi-tr-tng-th-pht-trin-mt-cch-tnhin-th-gii-quan-ton-din-vi-mi-mang-tnht-ph-thng-qua-sa-dng-vtrao-quyn-ti-ni-lm-vic {
+                        .text {
                             overflow-wrap: break-word;
                             font-family: 'Krub';
                             font-weight: 500;
@@ -141,6 +141,36 @@
                         font-size: 25px;
                         color: #1C1F35;
                     }
+                }
+            }
+            @media only screen and (min-width: 768px) and (max-width:1100px){
+                width: 90%;
+                background-color: #ffffff;
+                position: absolute;
+                top: 50%;
+                translate: 5% 80%;
+                box-sizing: border-box;
+                .content-3{
+                    width: 90%;
+                }
+                @media only screen and (min-width: 768px) and (max-width:980px){
+                    width: 90%;
+                    background-color: #ffffff;
+                    position: absolute;
+                    top: 50%;
+                    translate: 5% 75%;
+                    box-sizing: border-box;
+                }
+            }
+            @media only screen and  (max-width:767px){
+                width: 90%;
+                background-color: #ffffff;
+                position: absolute;
+                top: 50%;
+                translate: 5% 60%;
+                box-sizing: border-box;
+                .content-3{
+                    width: 90%;
                 }
             }
         }
@@ -202,7 +232,7 @@
                 }
             }
         }
-         @media only screen and (min-width: 768px) and (max-width:1024px){
+        @media only screen and (min-width: 768px) and (max-width:1100px){
             .image{
                 display: none;
             }
@@ -211,6 +241,12 @@
             .image{
                 display: none;
             }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        height: 900px;
+        @media only screen and (max-width: 660px) {
+            height: 1000px;
         }
     }
 }
@@ -223,16 +259,11 @@
     padding-top: 10px;
     position: relative; // Đảm bảo phần about-1 có vị trí tương đối
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    z-index: 1000;
     align-items: center;
     margin-bottom: 20px;
-    .line-5{
-        background: #D4D4D4;
-        position: relative;
-        margin-bottom: 45px;
-        width: 1200px;
-        height: 1px;
-    }
     .container-2{
         position: relative;
         margin-bottom: 30px;
@@ -299,6 +330,11 @@
             right: 525.1px;
             width: 1px;
             height: 143px;
+        }
+    }
+    @media only screen and (max-width: 768px){
+        @media only screen and (max-width: 600px){
+            margin-top: 50px;
         }
     }
 }

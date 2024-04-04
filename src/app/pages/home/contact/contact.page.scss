@@ -275,12 +275,6 @@
                     box-sizing: border-box;
                     align-items: center;
                     justify-content: center;
-                    .star{
-                        position: relative;
-                        margin-right: 8.8px;
-                        width: 51.6px;
-                        height: 51.6px;
-                    }
                     .studio-green{
                         position: relative;
                         margin-bottom: 3.5px;
@@ -416,11 +410,33 @@
         }
     }
     @media only screen and (min-width: 768px) and (max-width:1024px){
+        height: 800px;
         .client-logo{
             display: none;
         }
     }
     @media only screen and (max-width: 768px) {
+        padding: 20px 40px;
+        .form{
+            display: block;
+            .content-7{
+                width: 100%;
+                .content-8{
+                   display: grid;
+                   grid-template-columns: 1fr 1fr;
+                    .mail{
+                        margin-left: 20px;
+                    }
+                    .call{
+                        margin-left:20px;
+                    }
+                }
+            }
+            .form-1{
+                width: 90%;
+                margin: 42px 0 6px 30px;
+            }
+        }
         .client-logo{
             display: none;
         }

@@ -1,16 +1,22 @@
-html{
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
 
-    .app{
-        width: 10   0% !important;
-        height: 100% !important;
-    }
+  .body {
+    width: 100%;
+  }
+
+  .app {
+    width: 10 0% !important;
+    height: 100% !important;
+  }
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";

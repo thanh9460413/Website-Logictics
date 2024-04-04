@@ -1,112 +1,146 @@
-// @import "~@fortawesome/fontawesome-free/css/all.css";
 // Thắng
+@import "../../../../node_modules/bulma/css/bulma.css";
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  font-family: "ABeeZee", sans-serif;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  background-color: #091242;
+  color: white;
+}
+
+.upper-footer {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 55px;
+  padding: 0 120px;
+}
+
+.upper-footer-logo {
+  font-size: 34px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.upper-footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-footer-item-header {
+  width: fit-content;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 30px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid white;
+}
+
+.upper-footer-item {
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.upper-footer-news-registration {
+  width: 365px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+
+.upper-footer-registration-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.upper-footer-registration-input {
+  width: 269px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 3px;
+  margin-right: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+}
+.upper-footer-registration-btn {
+  width: 116px;
+  height: 50px;
+  border-radius: 3px;
+  border: none;
+  color: #4a99d3;
+  font-size: 16px;
+  font-style: italic;
+  background-color: white;
+}
+
+.lower-footer {
+  border-top: 1px solid white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px;
+}
+
+.lower-footer-text {
+  font-size: 10px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lower-footer-social-media {
+  margin-right: 24px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
   footer {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    font-family: "ABeeZee", sans-serif;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 350px;
-    background-color: #091242;
-    color: white;
+    height: fit-content;
+    // width: fit-content;
   }
-  
   .upper-footer {
-    width: 100%;
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    margin-top: 55px;
-    padding: 0 120px;
+    padding: 0;
   }
-  
-  .upper-footer-logo {
-    font-size: 34px;
-    font-style: italic;
-    text-transform: uppercase;
+
+  .upper-footer-item {
+    padding: 0;
   }
-  
-  .upper-footer-column {
-    display: flex;
+
+  .upper-footer-registration-field {
     flex-direction: column;
   }
-  
-  .upper-footer-item-header {
-    width: fit-content;
-    font-size: 18px;
-    font-style: italic;
-    margin-bottom: 30px;
-    padding-bottom: 4px;
-    border-bottom: 2px solid white;
-  }
-  
-  .upper-footer-item {
-    font-size: 14px;
-    margin-bottom: 20px;
-    font-weight: 400;
-  }
-  
-  .upper-footer-news-registration {
-    width: 365px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
-    margin-bottom: 8px;
-  }
-  
-  .upper-footer-registration-field {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
+
   .upper-footer-registration-input {
-    width: 269px;
-    height: 50px;
-    padding: 8px;
-    border-radius: 3px;
-    margin-right: 8px;
-    font-size: 14px;
-    font-weight: 400;
-    border: none;
-  }
-  .upper-footer-registration-btn {
-    width: 116px;
-    height: 50px;
-    border-radius: 3px;
-    border: none;
-    color: #4a99d3;
-    font-size: 16px;
-    font-style: italic;
-    background-color: white;
-  }
-  
-  .lower-footer {
-    border-top: 1px solid white;
     width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 120px;
   }
-  
-  .lower-footer-text {
-    font-size: 10px;
-    font-weight: 400;
-    font-style: italic;
+
+  .upper-footer-registration-btn {
+    margin-top: 8px;
+    width: 100%;
   }
-  
-  .lower-footer-social-media {
-    margin-right: 24px;
-    font-size: 20px;
+
+  .lower-footer {
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
   }
+}

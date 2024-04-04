@@ -434,7 +434,19 @@
             }
             .form-1{
                 width: 90%;
-                margin: 42px 0 6px 30px;
+                margin: 0px 0 6px 30px;
+                .container-20{
+                    width: 100%;
+                    display: block;
+                    margin: 0;
+                    .input-text{
+                        width: 100%;
+                        margin-top: 20px;
+                    }
+                }
+                .container-22{
+                    margin-top: 20px;
+                }
             }
         }
         .client-logo{

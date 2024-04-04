@@ -1,0 +1,203 @@
+.contact {
+  background: #091242;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // height: 1064px;
+  height: 500px;
+  box-sizing: border-box;
+
+  .form {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .content-7 {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+
+      .text-10 {
+        margin-bottom: 8px;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        box-sizing: border-box;
+
+        .title {
+          margin-bottom: 3px;
+          display: flex;
+          flex-direction: column;
+          align-self: flex-start;
+          width: fit-content;
+          box-sizing: border-box;
+
+          .sub-text-2 {
+            margin-bottom: 13px;
+            display: flex;
+            flex-direction: row;
+            align-self: flex-start;
+            width: fit-content;
+            box-sizing: border-box;
+
+            .pattern-4 {
+              background: linear-gradient(
+                274.06deg,
+                #ffb629 101.2%,
+                #ffda56 159.83%,
+                #ffd7a6 216.8%
+              );
+              width: 4px;
+              height: 23px;
+            }
+
+            .contact-1 {
+              background: rgba(232, 232, 232, 0.1);
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              padding: 3px 9.6px 3px 9px;
+              box-sizing: border-box;
+
+              .lin-h {
+                overflow-wrap: break-word;
+                font-family: "Rubik";
+                font-weight: 400;
+                font-size: 14px;
+                color: #ffffff;
+              }
+            }
+          }
+
+          .hy-lin-lc-vi-chng-ti {
+            overflow-wrap: break-word;
+            font-family: "Rubik";
+            font-weight: 600;
+            font-size: 35px;
+            color: #ffffff;
+          }
+        }
+
+        .tn-dng-cc-khun-kh-linh-hot-cung-cp-bn-tm-tt-mnh-mcho-chin-lc-thcy-tduy-hp-tc-nhm-nng-cao-gi-tr-tng-th {
+          overflow-wrap: break-word;
+          font-family: "Krub";
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 1.515;
+          color: #ffffff;
+        }
+      }
+
+      .content-8 {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        width: fit-content;
+        box-sizing: border-box;
+
+        .mail {
+          margin-bottom: 30px;
+          display: flex;
+          flex-direction: row;
+          align-self: flex-start;
+          width: fit-content;
+          box-sizing: border-box;
+
+          .icon-10 {
+            margin-right: 14px;
+            width: 63px;
+            height: 63px;
+          }
+
+          .text {
+            margin: 12.5px 0;
+            display: inline-block;
+            overflow-wrap: break-word;
+            font-family: "Krub";
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.35;
+            color: #ffffff;
+          }
+        }
+
+        .call {
+          margin-bottom: 30px;
+          display: flex;
+          flex-direction: row;
+          align-self: flex-start;
+          width: fit-content;
+          box-sizing: border-box;
+
+          .icon-11 {
+            border-radius: 31.5px;
+            background: #111c55;
+            position: relative;
+            margin-right: 14px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 22px 0 24px 1px;
+            width: 63px;
+            height: 63px;
+            box-sizing: border-box;
+
+            .vector-43 {
+              width: 18px;
+              height: 17px;
+            }
+          }
+
+          .text {
+            margin: 12.5px 0;
+            display: inline-block;
+            overflow-wrap: break-word;
+            font-family: "Krub";
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.35;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .form-1 {
+      margin: 42px 0 6px 0;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      box-sizing: border-box;
+
+      .container-20 {
+        margin-bottom: 31px;
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        box-sizing: border-box;
+        .input-text {
+          position: relative;
+          background-color: #091242;
+          margin-right: 28px;
+          color: #ffffff;
+          padding: 21px 30px;
+          width: 365px;
+          border-radius: 3px;
+          font-size: 14px;
+          outline-color: #4a99d3;
+          font-weight: 400;
+          border: 1px solid #4a99d3; // Sử dụng border thay vì border-color
+          box-sizing: border-box; // Đảm bảo chiều rộng và chiều cao tính cả phần border
+
+          &::placeholder {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,110 +5,111 @@
 </head>
 
 <nav class="navbar">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="../assets/images/logo.png" alt="Logo" />
-    </a>
-    <div class="light-search-box">
-      <div class="light-icon">
-        <img
-          class="search-normal"
-          src="../assets/vectors/searchNormal1_x2.svg"
-        />
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../assets/images/logo.png" alt="Logo">
+      </a>
+      <div class="light-search-box">
+        <div class="light-icon">
+          <img class="search-normal" src="../assets/vectors/searchNormal1_x2.svg" />
+        </div>
+        <input class="search" placeholder="Tìm kiếm..." />
       </div>
-      <input class="search" placeholder="Tìm kiếm..." />
+      <div class="light-language">
+        <div class="language">
+          <div class="light-icon-1">
+            <img class="global" src="../assets/vectors/global2_x2.svg" />
+          </div>
+          <div class="english">
+            Vietnamese
+          </div>
+        </div>
+        <div class="light-icon-2">
+          <img class="vector-79" src="../assets/vectors/vector1_x2.svg" />
+        </div>
+      </div>
+      <div class="light-location">
+        <div class="button-3">
+          <img class="location" src="../assets/vectors/location1_x2.svg" />
+        </div>
+        <div class="text-17">
+          <div class="location-1">
+            Vị trí
+          </div>
+          <div class="location-2">
+            <span class="brazil-rio-de-janeiro">
+              Hồ Chí Minh, Việt Nam
+            </span>
+            <div class="light-icon-3">
+              <img class="vector-82" src="../assets/vectors/vector15_x2.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="light-language">
-      <div class="language">
-        <div class="light-icon-1">
-          <img class="global" src="../assets/vectors/global2_x2.svg" />
-        </div>
-        <div class="english">Vietnamese</div>
-      </div>
-      <div class="light-icon-2">
-        <img class="vector-79" src="../assets/vectors/vector1_x2.svg" />
-      </div>
-    </div>
-    <div class="light-location">
-      <div class="button-3">
-        <img class="location" src="../assets/vectors/location1_x2.svg" />
-      </div>
-      <div class="text-17">
-        <div class="location-1">Vị trí</div>
-        <div class="location-2">
-          <span class="brazil-rio-de-janeiro"> Hồ Chí Minh, Việt Nam </span>
-          <div class="light-icon-3">
-            <img class="vector-82" src="../assets/vectors/vector15_x2.svg" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="categories" #navItems>
-      <div class="item active" (click)="setActive($event)">
-        <span class="item-text">Trang Chủ</span>
-      </div>
-      <div class="item" (click)="setActive($event)">
-        <span class="item-text">Giới Thiệu</span>
-      </div>
-      <div class="item has-dropdown" (click)="setActive($event)">
-        <span class="item-text">Danh Mục</span>
-        <div class="vuesaxlineararrow-down">
-          <img class="vector-68" src="../assets/vectors/vector4_x2.svg" />
-        </div>
-        <div class="dropdown">
-          <div class="item-dropdown">
-            <span class="item-text-dropdown">Sản Phẩm</span>
-          </div>
-          <div class="item-dropdown">
-            <span class="item-text-dropdown">Sản Phẩm</span>
-          </div>
-          <div class="item-dropdown">
-            <span class="item-text-dropdown">Sản Phẩm</span>
-          </div>
-          <div class="item-dropdown">
-            <span class="item-text-dropdown">Sản Phẩm</span>
-          </div>
-        </div>
-      </div>
-      <div class="item has-dropdown" (click)="setActive($event)">
-        <span class="item-text">Dự Án</span>
+    <div class="container">
 
-        <div class="vuesaxlineararrow-down">
-          <img class="vector-68" src="../assets/vectors/vector4_x2.svg" />
+      <div class="categories" #navItems>
+        <div class="item active" (click)="setActive($event)">
+          <span class="item-text">Trang Chủ</span>
+
         </div>
-        <div class="dropdown">
-          <!-- Các mục trong danh sách dropdown ở đây -->
+        <div class="item" (click)="setActive($event)">
+          <span class="item-text">Giới Thiệu</span>
+        </div>
+        <div class="item has-dropdown" (click)="setActive($event)">
+          <span class="item-text">Danh Mục</span>
+          <div class="vuesaxlineararrow-down">
+            <img class="vector-68" src="../assets/vectors/vector4_x2.svg" />
+          </div>
+          <div class="dropdown">
+            <div class="item-dropdown">
+              <span class="item-text-dropdown">Sản Phẩm</span>
+            </div>
+            <div class="item-dropdown">
+              <span class="item-text-dropdown">Sản Phẩm</span>
+            </div>
+            <div class="item-dropdown">
+              <span class="item-text-dropdown">Sản Phẩm</span>
+            </div>
+            <div class="item-dropdown">
+              <span class="item-text-dropdown">Sản Phẩm</span>
+            </div>
+          </div>
+        </div>
+        <div class="item has-dropdown"(click)="setActive($event)" >
+          <span class="item-text">Dự Án</span>
+
+          <div class="vuesaxlineararrow-down">
+            <img class="vector-68" src="../assets/vectors/vector4_x2.svg" />
+          </div>
+          <div class="dropdown">
+            <!-- Các mục trong danh sách dropdown ở đây -->
+          </div>
+        </div>
+        <div class="item" (click)="setActive($event)">
+          <span class="item-text">Tin Tức</span>
+
+        </div>
+        <div class="item" (click)="setActive($event)">
+          <span class="item-text">Liên Hệ</span>
+
         </div>
       </div>
-      <div class="item" (click)="setActive($event)">
-        <span class="item-text">Tin Tức</span>
-      </div>
-      <div class="item" (click)="setActive($event)">
-        <span class="item-text">Liên Hệ</span>
+      <div class="buttons">
+        <div class="light-button">
+          <div class="user">
+            <svg width="20" height="20" viewBox="0 0 40 40" fill="#4475F2" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path
+                d="M27.133,11.667C27.133,15.606 23.94,18.8 20,18.8L20,21.2C25.265,21.2 29.533,16.932 29.533,11.667L27.133,11.667ZM20,18.8C16.06,18.8 12.867,15.606 12.867,11.667L10.467,11.667C10.467,16.932 14.735,21.2 20,21.2L20,18.8ZM12.867,11.667C12.867,7.727 16.06,4.533 20,4.533L20,2.133C14.735,2.133 10.467,6.402 10.467,11.667L12.867,11.667ZM20,4.533C23.94,4.533 27.133,7.727 27.133,11.667L29.533,11.667C29.533,6.402 25.265,2.133 20,2.133L20,4.533Z" />
+              <path
+                d="M33.117,36.667C33.117,37.329 33.654,37.867 34.317,37.867C34.979,37.867 35.517,37.329 35.517,36.667L33.117,36.667ZM4.483,36.667C4.483,37.329 5.021,37.867 5.683,37.867C6.346,37.867 6.883,37.329 6.883,36.667L4.483,36.667ZM35.517,36.667C35.517,29.335 28.321,23.8 20,23.8L20,26.2C27.479,26.2 33.117,31.098 33.117,36.667L35.517,36.667ZM20,23.8C11.679,23.8 4.483,29.335 4.483,36.667L6.883,36.667C6.883,31.098 12.521,26.2 20,26.2L20,23.8Z" />
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="buttons">
-      <div class="light-button">
-        <div class="user">
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 40 40"
-            fill="#4475F2"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <path
-              d="M27.133,11.667C27.133,15.606 23.94,18.8 20,18.8L20,21.2C25.265,21.2 29.533,16.932 29.533,11.667L27.133,11.667ZM20,18.8C16.06,18.8 12.867,15.606 12.867,11.667L10.467,11.667C10.467,16.932 14.735,21.2 20,21.2L20,18.8ZM12.867,11.667C12.867,7.727 16.06,4.533 20,4.533L20,2.133C14.735,2.133 10.467,6.402 10.467,11.667L12.867,11.667ZM20,4.533C23.94,4.533 27.133,7.727 27.133,11.667L29.533,11.667C29.533,6.402 25.265,2.133 20,2.133L20,4.533Z"
-            />
-            <path
-              d="M33.117,36.667C33.117,37.329 33.654,37.867 34.317,37.867C34.979,37.867 35.517,37.329 35.517,36.667L33.117,36.667ZM4.483,36.667C4.483,37.329 5.021,37.867 5.683,37.867C6.346,37.867 6.883,37.329 6.883,36.667L4.483,36.667ZM35.517,36.667C35.517,29.335 28.321,23.8 20,23.8L20,26.2C27.479,26.2 33.117,31.098 33.117,36.667L35.517,36.667ZM20,23.8C11.679,23.8 4.483,29.335 4.483,36.667L6.883,36.667C6.883,31.098 12.521,26.2 20,26.2L20,23.8Z"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
+  </nav>
+
+

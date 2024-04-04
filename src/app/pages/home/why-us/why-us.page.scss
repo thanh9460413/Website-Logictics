@@ -4,7 +4,7 @@
     height: 1000px;
 
     .background {
-        background: url('../../../assets/images/photo2.png');
+        background: url('../../../../assets/images/photo2.png');
         position: absolute;
         left: 50%;
         top: 0px;
@@ -159,7 +159,7 @@
                 width: 461px;
                 height: 415px;
                 .photo-2{
-                    background: url('../../../assets/images/photo5.jpeg') 30% / cover no-repeat;
+                    background: url('../../../../assets/images/photo5.jpeg') 30% / cover no-repeat;
                     position: absolute;
                     right: -230px;
                     top:50px;
@@ -192,7 +192,7 @@
                     bottom: 0px;
                     height: 195px;
                     .photo-3{
-                        background: url('../../../assets/images/photo13.png') 50% / cover no-repeat;
+                        background: url('../../../../assets/images/photo13.png') 50% / cover no-repeat;
                         position: absolute;
                         top: 10px;
                         right: -240px;
@@ -201,6 +201,94 @@
                     }
                 }
             }
+        }
+    }
+}
+.about{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    position: relative; // Đảm bảo phần about-1 có vị trí tương đối
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 20px;
+    .line-5{
+        background: #D4D4D4;
+        position: relative;
+        margin-bottom: 45px;
+        width: 1200px;
+        height: 1px;
+    }
+    .container-2{
+        position: relative;
+        margin-bottom: 30px;
+        display: flex;
+        padding-bottom: 71px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 115px;
+        box-sizing: border-box;
+        .container-8{
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            border-top: 1px solid #D4D4D4;
+            border-bottom: 1px solid #D4D4D4;
+            padding: 20px 0 ;
+            &:nth-child(1){
+                border-right: 1px solid #D4D4D4;
+            }
+            .container-9{
+                margin-right: 16.3px;
+                overflow-wrap: break-word;
+                font-family: 'Rubik';
+                font-weight: 600;
+                font-size: 50px;
+                color: #1C1F35;
+            }
+            .pattern-1{
+                background: linear-gradient(274.06deg, #FFB629 101.2%, #FFDA56 159.83%, #FFD7A6 216.8%);
+                margin: 21px 16px 21px 0;
+                width: 17px;
+                height: 17px;
+            }
+            .n-hng-giao{
+                margin: 20.5px 0px 20.5px 0;
+                display: inline-block;
+                overflow-wrap: break-word;
+                font-family: 'League Spartan';
+                font-weight: 400;
+                font-size: 20px;
+                color: #1C1F35;
+            }
+        }
+        .container-10{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            width: 334.3px;
+            box-sizing: border-box;
+        }
+        .line-4{
+            background: #D4D4D4;
+            width: 1058.5px;
+            height: 1px;
+        }
+        .line-6{
+            background: #D4D4D4;
+            position: absolute;
+            top: 0px;
+            right: 525.1px;
+            width: 1px;
+            height: 143px;
         }
     }
 }

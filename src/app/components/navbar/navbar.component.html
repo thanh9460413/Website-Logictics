@@ -1,79 +1,163 @@
 
-<nav class="navbar">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="../assets/images/logo.png" alt="Logo">
-      </a>
-      <div class="light-search-box">
-        <div class="light-icon">
-          <img class="search-normal" src="../assets/vectors/searchNormal1_x2.svg" />
-        </div>
-        <input class="search" placeholder="Tìm kiếm..." />
+<div class="dv-header">
+  <div class="dv-header-bt">
+    <div class="pagewrap">
+      <div class="logo_top">
+        <a href="#"><img
+            src="https://www.vungtauship.com/datafiles/1651400587_1487690526_logo.png"
+            alt="CÔNG TY CỔ PHẦN DỊCH VỤ VÀ VẬN TẢI BIỂN VŨNG TÀU"></a>
       </div>
-      <div class="light-language">
-        <div class="language">
-          <div class="light-icon-1">
-            <img class="global" src="../assets/vectors/global2_x2.svg" />
-          </div>
-          <div class="english">
-            Vietnamese
+      <div class="dv-text">
+        <h3>CÔNG TY CỔ PHẦN DỊCH VỤ VÀ VẬN TẢI BIỂN VŨNG TÀU</h3>
+        <h2>VUNGTAU SHIP</h2>
+      </div>
+      <div class="dv-hdright">
+        <div class="timkiem_top no_box">
+          <div class="search">
+            <a
+              style="cursor:pointer"> <i class="fa fa-search"></i></a>
+            <input class="input_search input_search_enter" type="text" value="" data=".input_search_enter"
+              data-href="#" placeholder="Nhập từ khóa tìm kiếm...">
           </div>
         </div>
-        <div class="light-icon-2">
-          <img class="vector-79" src="../assets/vectors/vector1_x2.svg" />
+        <ul class="flag-language">
+          <li>
+            <a href="#" title="Tiếng Việt"><img src="../assets/images/vietnam.png"
+                alt="Tiếng Việt"></a>
+          </li>
+          <li>
+            <a href="#" title="American"><img src="../assets/images/usa.png"
+                alt="American"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="dv-menu">
+    <div class="pagewrap">
+      <div class="box_menu">
+        <ul class="menu no_box">
+          <li class="is_step_0 sub hide_1"><a class="active_mn_01 acti" href="#"
+              icons="›">Trang chủ</a></li>
+          <li class="is_step_1 sub hide_2"><a class=" active_mn_1" href="#"
+              icons="›">Giới thiệu</a></li>
+          <li class="is_step_2 sub hide_3"><a class=" active_mn_2" href="#" icons="›"
+              addok="ok">Tin tức<i class="fa fa-angle-down"></i></a>
+            <ul class="">
+              <li class="sub "><a class="" href="#" icons="›">Tin Tức nội
+                  bộ</a></li>
+              <li class="sub "><a class="" href="#" icons="›">Tin Tức</a></li>
+            </ul>
+          </li>
+          <li class="is_step_3 sub hide_4"><a class=" active_mn_3" href="#"
+              icons="›">Dịch vụ</a></li>
+          <li class="is_step_0 sub hide_5"><a class="active_mn_01 acti" href="#"
+              icons="›" addok="ok">Hoạt động công ty<i class="fa fa-angle-down"></i></a>
+            <ul class=" ">
+              <li class="sub"><a class=" active_mn_6" href="#" icons="›">Thư viện
+                  ảnh</a></li>
+              <li class="sub"><a class=" active_mn_7" href="#" icons="›">Thư
+                  viện video</a></li>
+            </ul>
+          </li>
+          <li class="is_step_4 sub hide_8"><a class=" active_mn_4" href="#"
+              icons="›">Bảng giá dịch vụ</a></li>
+          <li class="is_step_5 sub hide_9"><a class=" active_mn_5" href="#"
+              icons="›" addok="ok">Quan hệ cổ đông<i class="fa fa-angle-down"></i></a>
+            <ul class="">
+              <li class="sub "><a class="" href="#" icons="›">Tin tức cổ
+                  đông</a></li>
+              <li class="sub "><a class="" href="#" icons="›">Báo cáo</a></li>
+            </ul>
+          </li>
+          <li class="is_step_8 sub hide_10"><a class=" active_mn_8" href="#"
+              icons="›">Liên hệ</a></li>
+        </ul>
+        <div class="mn-mobile">
+          <a href="#" class="a_trangchu_mb">Trang chủ</a>
+          <div class="menu-bar hidden-md hidden-lg">
+            <a href="#nav-mobile">
+              <img src="../assets/images/menu.png" alt="">
+            </a>
+          </div>
+
+
         </div>
+        <script>
+          $(function () {
+            $(".menu > li").each(function () {
+              if ($("ul", this).length > 0) {
+                var a_ok = $("a", this).eq(0).attr('addok');
+                if (a_ok != "ok") {
+                  $("a", this).eq(0).append('<i class="fa fa-angle-down"></i>');
+                  $("a", this).eq(0).attr("addok", "ok");
+                }
+              }
+            });
+          });
+        </script>
+        <div class="clr"></div>
+      </div>
+      <!-- <div class="dv-phone"><a href=""><i class="fa fa-paper-plane-o"></i> Liên hệ ngay</a></div> -->
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+
+
+  <div id="nav-mobile" style="display: block;" class="mm-menu mm-offcanvas">
+    <div class="mm-panels">
+      <div class="mm-panel mm-hasnavbar mm-opened mm-current" id="mm-1">
+        <div class="mm-navbar"><a class="mm-title">Menu</a></div>
+        <ul class="mm-listview">
+          <li class="is_step_0  hide_1"><a class="active_mn_01 acti" href="#" icons="›">Trang
+              chủ</a></li>
+          <li class="is_step_1  hide_2"><a class=" active_mn_1" href="#"
+              icons="›">Giới thiệu</a></li>
+          <li class="is_step_2  hide_3"><a class="mm-next" href="#mm-2" data-target="#mm-2"></a><a class=" active_mn_2"
+              href="#" icons="›">Tin tức</a></li>
+          <li class="is_step_3  hide_4"><a class=" active_mn_3" href="#" icons="›">Dịch
+              vụ</a></li>
+          <li class="is_step_0  hide_5"><a class="mm-next" href="#mm-3" data-target="#mm-3"></a><a
+              class="active_mn_01 acti" href="#" icons="›">Hoạt động công ty</a>
+          </li>
+          <li class="is_step_4  hide_8"><a class=" active_mn_4" href="#"
+              icons="›">Bảng giá dịch vụ</a></li>
+          <li class="is_step_5  hide_9"><a class="mm-next" href="#mm-4" data-target="#mm-4"></a><a class=" active_mn_5"
+              href="#" icons="›">Quan hệ cổ đông</a></li>
+          <li class="is_step_8  hide_10"><a class=" active_mn_8" href="#" icons="›">Liên
+              hệ</a></li>
+        </ul>
+      </div>
+      <div class="mm-panel mm-hasnavbar mm-hidden" id="mm-2">
+        <div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" data-target="#mm-1"></a><a class="mm-title"
+            href="#mm-1">Tin tức</a></div>
+        <ul class="mm-listview">
+          <li class=" "><a class="" href="#" icons="›">Tin Tức nội bộ</a></li>
+          <li class=" "><a class="" href="#" icons="›">Tin Tức</a></li>
+        </ul>
+      </div>
+      <div class="mm-panel mm-hasnavbar mm-hidden" id="mm-3">
+        <div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" data-target="#mm-1"></a><a class="mm-title"
+            href="#mm-1">Hoạt động công ty</a></div>
+        <ul class="mm-listview">
+          <li class=""><a class=" active_mn_6" href="#" icons="›">Thư viện ảnh</a>
+          </li>
+          <li class=""><a class=" active_mn_7" href="#" icons="›">Thư viện
+              video</a></li>
+        </ul>
+      </div>
+      <div class="mm-panel mm-hasnavbar mm-hidden" id="mm-4">
+        <div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" data-target="#mm-1"></a><a class="mm-title"
+            href="#mm-1">Quan hệ cổ đông</a></div>
+        <ul class="mm-listview">
+          <li class=" "><a class="" href="#" icons="›">Tin tức cổ đông</a></li>
+          <li class=" "><a class="" href="#" icons="›">Báo cáo</a></li>
+        </ul>
       </div>
     </div>
-    <div class="container">
-
-      <div class="categories" #navItems>
-        <div class="item active" (click)="setActive($event)">
-          <span class="item-text">Trang Chủ</span>
-
-        </div>
-        <div class="item" (click)="setActive($event)">
-          <span class="item-text">Giới Thiệu</span>
-        </div>
-        <div class="item has-dropdown" (click)="setActive($event)">
-          <span class="item-text">Danh Mục</span>
-          <div class="vuesaxlineararrow-down">
-            <img class="vector-68" src="../assets/vectors/vector4_x2.svg" />
-          </div>
-          <div class="dropdown">
-            <div class="item-dropdown">
-              <span class="item-text-dropdown">Sản Phẩm</span>
-            </div>
-            <div class="item-dropdown">
-              <span class="item-text-dropdown">Sản Phẩm</span>
-            </div>
-            <div class="item-dropdown">
-              <span class="item-text-dropdown">Sản Phẩm</span>
-            </div>
-            <div class="item-dropdown">
-              <span class="item-text-dropdown">Sản Phẩm</span>
-            </div>
-          </div>
-        </div>
-        <div class="item has-dropdown"(click)="setActive($event)" >
-          <span class="item-text">Dự Án</span>
-
-          <div class="vuesaxlineararrow-down">
-            <img class="vector-68" src="../assets/vectors/vector4_x2.svg" />
-          </div>
-          <div class="dropdown">
-            <!-- Các mục trong danh sách dropdown ở đây -->
-          </div>
-        </div>
-        <div class="item" (click)="setActive($event)">
-          <span class="item-text">Tin Tức</span>
-
-        </div>
-        <div class="item" (click)="setActive($event)">
-          <span class="item-text">Liên Hệ</span>
-
-        </div>
-      </div>
-    </div>
-  </nav>
-
-
+  </div>
+</div>
+<!-- Thêm JavaScript vào phần đầu của trang web -->

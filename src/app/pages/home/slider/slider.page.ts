@@ -39,7 +39,13 @@ export class SliderComponent implements OnInit {
     
   }
   selectImage(index: number): void {
-    this.selectedIndex = index;
-  }
+    if (index >= this.images.length) {
+        this.selectedIndex = 0; // Quay lại vị trí đầu tiên
+    } else if (index < 0) {
+        this.selectedIndex = this.images.length - 1; // Quay lại vị trí cuối cùng
+    } else {
+        this.selectedIndex = index;
+    }
+}
 
 }

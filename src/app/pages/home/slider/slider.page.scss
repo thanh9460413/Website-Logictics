@@ -1,3 +1,4 @@
+
 .carousel-container{
     width: 100%;
     height: 600px;
@@ -6,26 +7,38 @@
     img{
         display: none;
     }
-    .btn-carousel{
+    .btn-carousel-prev{
         position: absolute;
         top:0;
         bottom: 0;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 0;
-        margin-left: 80px;
+        margin-left: 5%;
         color: #fff;
         text-align: center;
         background: 0 0;
         border:0;
         cursor: pointer;
     }
-    .prev{
-        background: url("../../../../assets/vectors/stroke1_x2.svg");
-        width: 10px;
-        background-size: cover;
-        height: 10px;
+    .btn-carousel-next{
+        position: absolute;
+        top:0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        height: 100%;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        background: 0 0;
+        border:0;
+        margin-right: 5%;
+        cursor: pointer;
     }
     .fade{
         animation-name: fade;
@@ -50,7 +63,6 @@
         top: 20%; /* Đặt ở giữa theo chiều dọc */
         left: 0;
         right: 0;
-        z-index: 1000;
         .title-main{
             background-color: #ffffff;
             padding: 5px 15px;

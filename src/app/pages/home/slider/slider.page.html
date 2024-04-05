@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <div *ngIf="images && images.length > 0" class="carousel-container">
     <img *ngFor="let image of images;let i = index" [src]="image.imageSrc" [alt]="image.imageAlt"
         [ngClass]="{'image-active':selectedIndex === i}"class="fade" />
@@ -21,12 +23,14 @@
             (click)="selectImage(i)">
         </span>
     </div>
-    <div *ngIf="controls" class="btn-carousel btn-prev">
-        <div class="prev" *ngFor="let dot of images;let i = index"
-        (click)="selectImage(i-1)"></div>
+    <div *ngIf="controls" class="btn-carousel-prev">
+        <span class="material-icons" (click)="selectedIndex > 0 ? selectImage(selectedIndex - 1) : null">
+            arrow_back_ios
+        </span>
     </div>
-    <div *ngIf="controls" class="btn-carousel btn-next">
-        <div class="next" *ngFor="let dot of images;let i = index" [ngClass]="{'active':selectedIndex === i}"
-        (click)="selectImage(i+1)"></div>
+    <div *ngIf="controls" class="btn-carousel-next">
+        <span class="material-icons" (click)="selectedIndex > 0 ? selectImage(selectedIndex + 1) : null">
+            arrow_forward_ios
+        </span>
     </div>
 </div>

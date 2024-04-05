@@ -22,7 +22,9 @@ body {
 .clr {
   clear: both;
 }
-
+.nav-mobile{
+  z-index: 10000;
+}
 figcaption {
   text-align: center;
   text-transform: capitalize;
@@ -795,16 +797,13 @@ ul.flag-language {
   position: relative;
 }
 
-.mm-menu,
-.mm-panels,
-.mm-panels>.mm-panel {
+.mm-panels {
   margin: 0;
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: 100%;
   bottom: 0;
-  z-index: 0;
 }
 
 .mm-menu {
@@ -859,9 +858,6 @@ ul.flag-language {
   background: #fff;
   border-color: inherit;
   -webkit-overflow-scrolling: touch;
-  overflow: scroll;
-  overflow-x: hidden;
-  overflow-y: auto;
   box-sizing: border-box;
 }
 

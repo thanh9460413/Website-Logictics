@@ -22,6 +22,11 @@
         </span>
     </div>
     <div *ngIf="controls" class="btn-carousel btn-prev">
-        <div class="prev"></div>
+        <div class="prev" *ngFor="let dot of images;let i = index"
+        (click)="selectImage(i-1)"></div>
+    </div>
+    <div *ngIf="controls" class="btn-carousel btn-next">
+        <div class="next" *ngFor="let dot of images;let i = index" [ngClass]="{'active':selectedIndex === i}"
+        (click)="selectImage(i+1)"></div>
     </div>
 </div>

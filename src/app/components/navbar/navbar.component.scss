@@ -101,7 +101,7 @@ header {
   .search a {
     width: 44px;
     text-indent: -10000px;
-    background: url("/src/assets/images/search.png") no-repeat center 11px;
+    background: url("../../../assets/images/search.png") no-repeat center 11px;
     float: right;
     border-left: 0px;
     height: 40px;
@@ -228,7 +228,7 @@ header {
   grid-area: auto;
   line-height: 24px;
   position: sticky;
-  .container{
+  .categories{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -238,6 +238,9 @@ header {
       justify-content: center;
       position: relative;
       height: 99%;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
     
       .list-menu {
         display: flex;

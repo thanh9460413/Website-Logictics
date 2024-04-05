@@ -6,10 +6,11 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import { ProjectComponent } from './project/project.page';
 import { NewsComponent } from './news/news.page';
 import { ContactComponent } from './contact/contact.page';
+import { SliderComponent } from './slider/slider.page';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent,AboutComponent,WhyUsComponent,FooterComponent,ProjectComponent,NewsComponent,ContactComponent],
+  imports: [NavbarComponent,AboutComponent,WhyUsComponent,FooterComponent,ProjectComponent,NewsComponent,ContactComponent,SliderComponent],
   templateUrl: './home.page.html',
   styleUrl: './home.page.scss'
 })

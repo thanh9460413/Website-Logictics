@@ -26,6 +26,7 @@
             flex-direction: row;
             margin-right: 30px;
             justify-content: center;
+            padding-left: 20px;
             box-sizing: border-box;
 
             .sub-text {
@@ -141,6 +142,7 @@
             width: 100%; // Đặt chiều rộng
             .heading{
                 width: 100%;
+                padding-left: 20px;
             }
             .content {
                 display: flex;

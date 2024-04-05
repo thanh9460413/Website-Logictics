@@ -1,0 +1,13 @@
+<svg width="104" height="114" viewBox="0 0 104 114" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect  x="19" y="53.02" width="12" height="12" stroke="#1C1F35" stroke-width="1" stroke-miterlimit="3.999327" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="19" y="79.02" width="12" height="12" stroke="#1C1F35" stroke-width="1" stroke-miterlimit="3.999327" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="45" y="53.02" width="12" height="12" stroke="#1C1F35" stroke-width="1" stroke-miterlimit="3.999327" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="45" y="79.02" width="12" height="12" stroke="#1C1F35" stroke-width="1" stroke-miterlimit="3.999327" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="69" y="53.02" width="12" height="12" fill="#FFD550" stroke="#1C1F35" stroke-width="1" stroke-miterlimit="3.999327" stroke-linecap="round" stroke-linejoin="round"/>
+<rect  x="69" y="79.02" width="12" height="12" stroke="#1C1F35" stroke-width="1" stroke-miterlimit="3.999327" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0,16.02C0,12.706 2.686,10.02 6,10.02L96,10.02C99.314,10.02 102,12.706 102,16.02L102,38.02L0,38.02Z" fill="#FFD550"/>
+<path d="M4.667,10.354L98,10.354L98,8.354L4.667,8.354L4.667,10.354ZM98,10.354C100.025,10.354 101.667,11.995 101.667,14.02L103.667,14.02C103.667,10.891 101.13,8.354 98,8.354L98,10.354ZM101.667,14.02L101.667,107.354L103.667,107.354L103.667,14.02L101.667,14.02ZM101.667,107.354C101.667,109.379 100.025,111.02 98,111.02L98,113.02C101.13,113.02 103.667,110.483 103.667,107.354L101.667,107.354ZM98,111.02L4.667,111.02L4.667,113.02L98,113.02L98,111.02ZM4.667,111.02C2.642,111.02 1,109.379 1,107.354L-1,107.354C-1,110.483 1.537,113.02 4.667,113.02L4.667,111.02ZM1,107.354L1,14.02L-1,14.02L-1,107.354L1,107.354ZM1,14.02C1,11.995 2.642,10.354 4.667,10.354L4.667,8.354C1.537,8.354 -1,10.891 -1,14.02L1,14.02Z" fill="#1C1F35"/>
+<line x1="78.333" y1="0.02" x2="78.333" y2="18.686" stroke="#1C1F35" stroke-width="1" stroke-miterlimit="3.999327" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="22.333" y1="0.02" x2="22.333" y2="18.686" stroke="#1C1F35" stroke-width="1" stroke-miterlimit="3.999327" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="0" y1="36.354" x2="102.667" y2="36.354" stroke="#1C1F35" stroke-width="1" stroke-miterlimit="3.999327" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

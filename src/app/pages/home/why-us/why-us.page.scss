@@ -1,0 +1,340 @@
+.content-1 {
+    position: relative;
+    background-color: #ffffff;
+    height: 1000px;
+
+    .background {
+        background: url('../../../../assets/images/photo2.png');
+        position: absolute;
+        left: 50%;
+        top: 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        translate: -50% 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 3px;
+        width: 100%;
+        height: 504px;
+        box-sizing: border-box;
+        z-index: 10;
+    }
+
+    .about-1 {
+        position: relative; // Đảm bảo phần about-1 có vị trí tương đối
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+        z-index: 1000; // Đảm bảo about-1 nằm trên background
+
+        .content-2 {
+            background-color: #ffffff;
+            position: absolute;
+            top: 50%;
+            translate: 0 70%;
+            width: 80%;
+            box-sizing: border-box;
+
+            .content-3 {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                width: 55%;
+                margin: 50px;
+                .text-8 {
+                    margin-bottom: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    width: fit-content;
+                    box-sizing: border-box;
+
+                    .sub-text-1 {
+                        margin-bottom: 12px;
+                        display: flex;
+                        flex-direction: row;
+                        align-self: flex-start;
+                        width: fit-content;
+                        box-sizing: border-box;
+
+                        .pattern {
+                            background: linear-gradient(274.06deg, #FFB629 101.2%, #FFDA56 159.83%, #FFD7A6 216.8%);
+                            width: 4px;
+                            height: 23px;
+                        }
+
+                        .frame-3 {
+                            background: rgba(232, 232, 232, 0.5);
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            padding: 3px 8.5px 3px 8px;
+                            box-sizing: border-box;
+
+                            .ti-sao-nn-chn-chng-ti {
+                                overflow-wrap: break-word;
+                                font-family: 'Rubik';
+                                font-weight: 400;
+                                font-size: 14px;
+                                color: #1C1F35;
+                            }
+                        }
+                    }
+
+                    .text-9 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: fit-content;
+                        box-sizing: border-box;
+
+                        .text_title {
+
+                            display: inline-block;
+                            overflow-wrap: break-word;
+                            font-family: 'Rubik';
+                            font-weight: 600;
+                            font-size: 35px;
+                            color: #1C1F35;
+                        }
+
+                        .text {
+                            overflow-wrap: break-word;
+                            font-family: 'Krub';
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 1.515;
+                            color: #666C89;
+                        }
+                    }
+                }
+            }
+
+            .content-4 {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                box-sizing: border-box;
+
+                .container-6 {
+                    background: rgba(255, 253, 253, 0.5);
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    margin-bottom: 20px;
+                    padding: 3px 1px 3px 9px;
+                    box-sizing: border-box;
+                    .icon-8{
+                        width: 58px;
+                        height: 58px;
+                        margin-right: 10px;
+                    }
+                    .giao-hngng-hn{
+       
+                        right: 0px;
+                        bottom: 14px;
+                        overflow-wrap: break-word;
+                        font-family: 'Rubik';
+                        font-weight: 400;
+                        font-size: 25px;
+                        color: #1C1F35;
+                    }
+                }
+            }
+            @media only screen and (min-width: 768px) and (max-width:1100px){
+                width: 90%;
+                background-color: #ffffff;
+                position: absolute;
+                top: 50%;
+                translate: 5% 80%;
+                box-sizing: border-box;
+                .content-3{
+                    width: 90%;
+                }
+                @media only screen and (min-width: 768px) and (max-width:980px){
+                    width: 90%;
+                    background-color: #ffffff;
+                    position: absolute;
+                    top: 50%;
+                    translate: 5% 75%;
+                    box-sizing: border-box;
+                }
+            }
+            @media only screen and  (max-width:767px){
+                width: 90%;
+                background-color: #ffffff;
+                position: absolute;
+                top: 50%;
+                translate: 5% 60%;
+                box-sizing: border-box;
+                .content-3{
+                    width: 90%;
+                }
+            }
+        }
+        .image{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 565px;
+            height: 462px;
+            box-sizing: border-box;
+            .image-1{
+                position: relative;
+                width: 461px;
+                height: 415px;
+                .photo-2{
+                    background: url('../../../../assets/images/photo5.jpeg') 30% / cover no-repeat;
+                    position: absolute;
+                    right: -230px;
+                    top:50px;
+                    width: 100%;
+                    height: 400px;
+                }
+            }
+            .image-2{
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                width: 302px;
+                height: 225px;
+                box-sizing: border-box;
+                .patttern{
+                    background: #FFFFFF;
+                    position: relative;
+                    width: 250px;
+                    height: 250px;
+                    position: absolute;
+                    right: -250px;
+                }
+                .container-14{
+                    position: absolute;
+                    left: 0px;
+                    right: 30px;
+                    bottom: 0px;
+                    height: 195px;
+                    .photo-3{
+                        background: url('../../../../assets/images/photo13.png') 50% / cover no-repeat;
+                        position: absolute;
+                        top: 10px;
+                        right: -240px;
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+        @media only screen and (min-width: 768px) and (max-width:1100px){
+            .image{
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .image{
+                display: none;
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        height: 900px;
+        @media only screen and (max-width: 660px) {
+            height: 1000px;
+        }
+    }
+}
+.about{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    position: relative; // Đảm bảo phần about-1 có vị trí tương đối
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1000;
+    align-items: center;
+    margin-bottom: 20px;
+    .container-2{
+        position: relative;
+        margin-bottom: 30px;
+        display: flex;
+        padding-bottom: 71px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 115px;
+        box-sizing: border-box;
+        .container-8{
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            border-top: 1px solid #D4D4D4;
+            border-bottom: 1px solid #D4D4D4;
+            padding: 20px 0 ;
+            &:nth-child(1){
+                border-right: 1px solid #D4D4D4;
+            }
+            .container-9{
+                margin-right: 16.3px;
+                overflow-wrap: break-word;
+                font-family: 'Rubik';
+                font-weight: 600;
+                font-size: 50px;
+                color: #1C1F35;
+            }
+            .pattern-1{
+                background: linear-gradient(274.06deg, #FFB629 101.2%, #FFDA56 159.83%, #FFD7A6 216.8%);
+                margin: 21px 16px 21px 0;
+                width: 17px;
+                height: 17px;
+            }
+            .n-hng-giao{
+                margin: 20.5px 0px 20.5px 0;
+                display: inline-block;
+                overflow-wrap: break-word;
+                font-family: 'League Spartan';
+                font-weight: 400;
+                font-size: 20px;
+                color: #1C1F35;
+            }
+        }
+        .container-10{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            width: 334.3px;
+            box-sizing: border-box;
+        }
+        .line-4{
+            background: #D4D4D4;
+            width: 1058.5px;
+            height: 1px;
+        }
+        .line-6{
+            background: #D4D4D4;
+            position: absolute;
+            top: 0px;
+            right: 525.1px;
+            width: 1px;
+            height: 143px;
+        }
+    }
+    @media only screen and (max-width: 768px){
+        @media only screen and (max-width: 600px){
+            margin-top: 50px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<div *ngIf="images && images.length > 0" class="carousel-container">
+    <img *ngFor="let image of images;let i = index" [src]="image.imageSrc" [alt]="image.imageAlt"
+        [ngClass]="{'image-active':selectedIndex === i}"class="fade" />
+    <div *ngFor="let image of images;let i = index" class="title-container">
+        <div class="title-main">
+             <span style="color:#4475F2; font-size: 24px; margin-right: 5px;">• </span>{{image.title}}
+        </div>
+        <h1 style="color: #fff; font-size: 48px; margin-bottom: 10px;">{{image.description}}</h1>
+        <h3 style="color: #bcb7b7; font-size: 24px;">{{image.description1}}</h3>
+        <div class="cta">
+            <div class="cta-1">
+              <span style="color: #fff;">
+              Tìm hiểu thêm →
+              </span>
+            </div>
+            
+          </div>
+    </div>
+    <div *ngIf="indicators" class="carousel-dot-container">
+        <span *ngFor="let dot of images;let i = index" class="dot" [ngClass]="{'active':selectedIndex === i}"
+            (click)="selectImage(i)">
+        </span>
+    </div>
+    <div *ngIf="controls" class="btn-carousel btn-prev">
+        <div class="prev"></div>
+    </div>
+</div>

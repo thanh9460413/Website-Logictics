@@ -24,6 +24,9 @@ body {
 }
 .nav-mobile{
   z-index: 10000;
+  @media only screen and (min-width: 1024px){
+    display: none !important;
+  }
 }
 figcaption {
   text-align: center;
@@ -796,7 +799,9 @@ ul.flag-language {
   overflow-x: hidden;
   position: relative;
 }
-
+.list-details{
+  display: none;
+}
 .mm-panels {
   margin: 0;
   position: absolute;
@@ -880,7 +885,6 @@ ul.flag-language {
   transform: none !important;
 }
 
-.mm-vertical .mm-listview .mm-panel,
 .mm-listview .mm-vertical .mm-panel {
   display: none;
   padding: 10px 0 10px 10px;

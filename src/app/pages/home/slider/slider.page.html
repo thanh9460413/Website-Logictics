@@ -24,12 +24,12 @@
         </span>
     </div>
     <div *ngIf="controls" class="btn-carousel-prev">
-        <span class="material-icons" (click)="selectedIndex > 0 ? selectImage(selectedIndex - 1) : null">
+        <span class="material-icons" (click)="selectImage(selectedIndex - 1)">
             arrow_back_ios
         </span>
     </div>
-    <div *ngIf="controls" class="btn-carousel-next">
-        <span class="material-icons" (click)="selectedIndex > 0 ? selectImage(selectedIndex + 1) : null">
+    <div *ngIf="controls" class="btn-carousel-next" (click)="selectImage(selectedIndex + 1)">
+        <span class="material-icons">
             arrow_forward_ios
         </span>
     </div>

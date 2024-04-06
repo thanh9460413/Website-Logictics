@@ -77,8 +77,8 @@
         </ul>
         <div class="mn-mobile">
           <a href="#" class="a_trangchu_mb">Trang chủ</a>
-          <div class="menu-bar hidden-md hidden-lg">
-            <a  (click)="toggleNavMobile()">
+          <div class="menu-bar hidden-md hidden-lg" (click)="toggleNavMobile()">
+            <a>
               <img src="../assets/images/menu.png" alt="">
             </a>
           </div>
@@ -110,54 +110,18 @@
 
   <div id="nav-mobile" class="nav-mobile"   [ngStyle]="{'display': isNav ?'block':'none'}"  >
     <div class="mm-panels">
-      <div class="mm-panel mm-hasnavbar mm-opened mm-current" id="mm-1">
-        <ul class="mm-listview">
-          <li class="is_step_0  hide_1"><a class="active_mn_01 acti" href="#" icons="›">Trang
-              chủ</a></li>
-          <li class="is_step_1  hide_2"><a class=" active_mn_1" href="#"
-              icons="›">Giới thiệu</a></li>
-          <li class="is_step_2  hide_3"><a class="mm-next" href="#mm-2" data-target="#mm-2"></a><a class=" active_mn_2"
-              href="#" icons="›">Tin tức</a></li>
-          <li class="is_step_3  hide_4"><a class=" active_mn_3" href="#" icons="›">Dịch
-              vụ</a></li>
-          <li class="is_step_0  hide_5"><a class="mm-next" href="#mm-3" data-target="#mm-3"></a><a
-              class="active_mn_01 acti" href="#" icons="›">Hoạt động công ty</a>
-          </li>
-          <li class="is_step_4  hide_8"><a class=" active_mn_4" href="#"
-              icons="›">Bảng giá dịch vụ</a></li>
-          <li class="is_step_5  hide_9"><a class="mm-next" href="#mm-4" data-target="#mm-4"></a><a class=" active_mn_5"
-              href="#" icons="›">Quan hệ cổ đông</a></li>
-          <li class="is_step_8  hide_10"><a class=" active_mn_8" href="#" icons="›">Liên
-              hệ</a></li>
-        </ul>
-      </div>
-      <div class="mm-panel mm-hasnavbar mm-hidden" id="mm-2">
-        <div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" data-target="#mm-1"></a><a class="mm-title"
-            href="#mm-1">Tin tức</a></div>
-        <ul class="mm-listview">
-          <li class=" "><a class="" href="#" icons="›">Tin Tức nội bộ</a></li>
-          <li class=" "><a class="" href="#" icons="›">Tin Tức</a></li>
-        </ul>
-      </div>
-      <div class="mm-panel mm-hasnavbar mm-hidden" id="mm-3">
-        <div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" data-target="#mm-1"></a><a class="mm-title"
-            href="#mm-1">Hoạt động công ty</a></div>
-        <ul class="mm-listview">
-          <li class=""><a class=" active_mn_6" href="#" icons="›">Thư viện ảnh</a>
-          </li>
-          <li class=""><a class=" active_mn_7" href="#" icons="›">Thư viện
-              video</a></li>
-        </ul>
-      </div>
-      <div class="mm-panel mm-hasnavbar mm-hidden" id="mm-4">
-        <div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" data-target="#mm-1"></a><a class="mm-title"
-            href="#mm-1">Quan hệ cổ đông</a></div>
-        <ul class="mm-listview">
-          <li class=" "><a class="" href="#" icons="›">Tin tức cổ đông</a></li>
-          <li class=" "><a class="" href="#" icons="›">Báo cáo</a></li>
-        </ul>
-      </div>
+      <ul style="background-color: #fff;">
+        <li>Trang chủ</li>
+        <li (click)="toggleNavMobileDetails()">
+          Chi tiết
+          <div class="list-details" [ngStyle]="{'display': isNavDetails ?'block':'none'}"  >
+            <ul>
+              <li>1</li>
+              <li>2</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </div>
-  </div>
 </div>
 <!-- Thêm JavaScript vào phần đầu của trang web -->

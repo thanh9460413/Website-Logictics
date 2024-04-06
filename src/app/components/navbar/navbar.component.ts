@@ -16,8 +16,12 @@ export class NavbarComponent implements OnInit {
       // Logic trong phương thức ngOnInit
   }
   isNav:boolean = false;
+  isNavDetails:boolean = false;
   toggleNavMobile(){
     this.isNav = !this.isNav
+  }
+  toggleNavMobileDetails(){
+    this.isNavDetails = !this.isNavDetails
   }
   setActive(event: Event) {
       const target = event.target as HTMLElement;

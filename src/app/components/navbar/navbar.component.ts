@@ -1,9 +1,9 @@
 import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
-
+import { CarouselModule } from 'primeng/carousel';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [],
+  imports: [CarouselModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
@@ -15,7 +15,10 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
       // Logic trong phương thức ngOnInit
   }
-
+  isNav:boolean = false;
+  toggleNavMobile(){
+    this.isNav = !this.isNav
+  }
   setActive(event: Event) {
       const target = event.target as HTMLElement;
       if (target.classList.contains('item-text') || target.classList.contains('item-dropdown')) {

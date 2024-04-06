@@ -1,4 +1,4 @@
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <div class="dv-header">
   <div class="dv-header-bt">
@@ -110,17 +110,50 @@
 
   <div id="nav-mobile" class="nav-mobile"   [ngStyle]="{'display': isNav ?'block':'none'}"  >
     <div class="mm-panels">
-      <ul style="background-color: #fff;">
-        <li>Trang chủ</li>
-        <li (click)="toggleNavMobileDetails()">
-          Chi tiết
+      <ul class="ul-panels">
+        <li class="li-panels"> <a href="#">Trang chủ</a></li>
+        <li class="li-panels"  (click)="toggleNavMobileDetails()">
+          <a href="#" style="display: flex;">Tin Tức
+            <span class="material-icons">
+          expand_more
+          </span> </a>
           <div class="list-details" [ngStyle]="{'display': isNavDetails ?'block':'none'}"  >
-            <ul>
-              <li>1</li>
-              <li>2</li>
+            <ul class="ul-details">
+              <div class="item-detals"> <a href="#">Tin Tức Nội Bộ</a> </div>
+              <div class="item-detals"> <a href="#">Tin Tức</a></div>
             </ul>
           </div>
         </li>
+        <li class="li-panels"> <a href="#">Dịch vụ</a> </li>
+        <li class="li-panels"> <a href="#">Bảng Gía Dịch Vụ</a> </li>
+                <li (click)="toggleNavDV()">
+               <a href="#" style="display: flex;" >Quan Hệ Cổ Đông
+                <span class="material-icons">
+                expand_more
+                </span>
+               </a>
+                  <div class="list-details" [ngStyle]="{'display': isNavDetailsDV ?'block':'none'}">
+                    <ul class="ul-details">
+                      <div class="item-detals"><a href="#">Tin Tức Cổ Đông</a></div>
+                      <div class="item-detals"><a href="#">Báo Cáo</a></div>
+                    </ul>
+                  </div>
+                </li>
+                        <li class="li-panels" (click)="toggleNavMobileDetailsCT()">
+                    <a href="#" style="display: flex;">Hoạt Động Công Ty
+                      <span class="material-icons">
+                    expand_more
+                      </span>
+                    </a>
+                          <div class="list-details" [ngStyle]="{'display': isNavDetailsCT ?'block':'none'}">
+                            <ul class="ul-details">
+                              <div class="item-detals"> <a href="#">Thư Viện Ảnh</a> </div>
+                              <div class="item-detals"> <a href="#">Thư Viện VIDEO</a></div>
+                            </ul>
+                          </div>
+                        </li>
+
+            <li class="li-panels"><a href="#">Liên hệ</a></li>
       </ul>
     </div>
 </div>

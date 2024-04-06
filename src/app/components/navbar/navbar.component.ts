@@ -17,11 +17,21 @@ export class NavbarComponent implements OnInit {
   }
   isNav:boolean = false;
   isNavDetails:boolean = false;
+  isNavDetailsDV:boolean =false;
+  isNavDetailsCT:boolean =false;
+
   toggleNavMobile(){
     this.isNav = !this.isNav
   }
   toggleNavMobileDetails(){
-    this.isNavDetails = !this.isNavDetails
+    this.isNavDetails = !this.isNavDetails;
+  }
+  toggleNavDV(){
+    this.isNavDetailsDV = !this.isNavDetailsDV;
+  }
+
+  toggleNavMobileDetailsCT(){
+    this.isNavDetailsCT = !this.isNavDetailsCT;
   }
   setActive(event: Event) {
       const target = event.target as HTMLElement;

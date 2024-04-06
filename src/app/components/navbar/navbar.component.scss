@@ -799,9 +799,51 @@ ul.flag-language {
   overflow-x: hidden;
   position: relative;
 }
+
+.ul-panels{
+  font-size: 20px;
+  background: #ffffff;
+  margin:10px;
+  padding: 10px;
+  max-width:50% ;
+  border: 1px solid #000;
+}
+
+.ul-panels li{
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 0.5px solid #000;
+}
 .list-details{
   display: none;
+  padding: 0 10px;
+  margin: 10px;
+  width: 100%;
 }
+
+.helo:hover{
+    background: #f5f5f5;
+      cursor: pointer;
+}
+
+.ul-panels li :hover{
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+ a .material-icons{
+  font-size: 20px;
+  margin-left: 0;
+}
+.item-detals{
+  padding: 10px;
+  margin-bottom: 10px;
+  border-top: 0.1px dashed #000;
+}
+.ul-details{
+  font-size: 18px;
+}
+
 .mm-panels {
   margin: 0;
   position: absolute;
